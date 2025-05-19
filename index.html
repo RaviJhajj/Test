@@ -8,9 +8,13 @@
   <p>If you can see this, your HTML is alive and kicking.</p>
   <p>Test test test</p>
   <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank"><strong>Click here</strong></a>
+  <button onclick="generateRandomNumber()">Generate</button>
+  <p id="output"></p>
   <script>
-    Let x = Math.random()
-    console.log(x)
+    function generateRandomNumber() {
+      const randomNum = Math.floor(Math.random() * 100) + 1;
+      document.getElementById("output").innerText = "Your number is: " + randomNum;
+    }
   </script>
 </body>
 </html>
