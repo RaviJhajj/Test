@@ -4,21 +4,24 @@
   <title>Test Page</title>
 </head>
 <body>
-  <h1>It works!</h1>
-  <p>If you can see this, your HTML is alive and kicking.</p>
-  <p>Test test test</p>
-  <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank"><strong>Click here</strong></a>
-  <button onclick="generateRandomNumber()">Generate</button>
-  <p id="output"></p>
+  <hi>Test website</hi>
   <script>
-    for (let i = 0; ; i < 5; i++) {function generateRandomNumber() {
-      const randomNum = Math.floor(Math.random() * 100) + 1;
-      document.getElementById("output").innerText = "Your number is: " + randomNum;
-    }}
+    alert('Welcome');
   </script>
-  <br><br><br>
-  <div>
- <script>button.onclick = generateRandomNumber()</script>
-  </div>
+  <br><br>
+  <h4>The button will tell you who the greatest NBA player is</h4>
+  <button onclick='generateRandomNumber()'>Click here</button>
+  <p id='output'></p>
+  <script>
+    function generateRandomNumber(){
+    const randomNum = Math.floor(Math.random() * 3);
+    let goat = '';
+    if (randomNum = 0) {goat = 'Lebron'} 
+    else if (randomNum = 1) {goat = 'Bronny James'} 
+    else if (randomNum = 2) {goat = 'LeGoat James'} 
+    else if (randomNum = 3) {goat = 'Lebron James'};
+    document.getElementById('output').innerText = 'The Goat is ' + goat;
+    }
+  </script>
 </body>
 </html>
